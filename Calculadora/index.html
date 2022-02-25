@@ -12,29 +12,31 @@
 <body>
     <div class="content">
         <div class="calculator">
-            <input id="display-calculator" type="text"></input>
+            <input type="number" id="display-calculator"></input>
+            <input type="text" id="display-result"></input>
             <div class="content-calculator">
-                <input type="button" value="CE" onclick="clearDisplay()"></input>
-                <input type="button" name="b7" value="7" onclick="insertNumber(this)"></input>
-                <input type="button" name="b8" value="8" onclick="insertNumber(this)"></input>
-                <input type="button" name="b9" value="9" onclick="insertNumber(this)"></input>
-                <input type="button" name="bx" value="*" onclick="insertNumber(this)"></input>
-                <input type="button" name="b4" value="4" onclick="insertNumber(this)"></input>
-                <input type="button" name="b5" value="5" onclick="insertNumber(this)"></input>
-                <input type="button" name="b6" value="6" onclick="insertNumber(this)"></input>
-                <input type="button" name="b-" value="-" onclick="insertNumber(this)"></input>
-                <input type="button" name="b1" value="1" onclick="insertNumber(this)"></input>
-                <input type="button" name="b2" value="2" onclick="insertNumber(this)"></input>
-                <input type="button" name="b3" value="3" onclick="insertNumber(this)"></input>
-                <input type="button" name="b+" value="+" onclick="insertNumber(this)"></input>
-                <input type="button" name="b0" value="0" onclick="insertNumber(this)"></input>
-                <input type="button" name="b." value="." onclick="insertNumber(this)"></input>
-                <input type="button" name="b=" value="=" onclick="insertNumber(this)"></input>
+                <input type="button" id="button-three" value="CE" onclick="clearDisplay()"></input>
+                <input type="button" value="7" onclick="insertNumber(this)"></input>
+                <input type="button" value="8" onclick="insertNumber(this)"></input>
+                <input type="button" value="9" onclick="insertNumber(this)"></input>
+                <input type="button" value="/" onclick="insertOperacion(this)"></input>
+                <input type="button" value="4" onclick="insertNumber(this)"></input>
+                <input type="button" value="5" onclick="insertNumber(this)"></input>
+                <input type="button" value="6" onclick="insertNumber(this)"></input>
+                <input type="button" value="x" onclick="insertOperacion(this)"></input>
+                <input type="button" value="1" onclick="insertNumber(this)"></input>
+                <input type="button" value="2" onclick="insertNumber(this)"></input>
+                <input type="button" value="3" onclick="insertNumber(this)"></input>
+                <input type="button" value="+" onclick="insertOperacion(this)"></input>
+                <input type="button" value="0" onclick="insertNumber(this)"></input>
+                <input type="button" value="." onclick="insertNumber(this)"></input>
+                <input type="button" value="=" onclick="result()"></input>
+                <input type="button" value="-" onclick="insertOperacion(this)"></input>
             </div>
         </div>
     </div>
 
-<script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
