@@ -1,28 +1,137 @@
+body {
+  margin: 0;
+  background: hsla(52, 82%, 52%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(52, 82%, 52%, 1) 0%,
+    hsla(1, 92%, 47%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(52, 82%, 52%, 1) 0%,
+    hsla(1, 92%, 47%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(52, 82%, 52%, 1) 0%,
+    hsla(1, 92%, 47%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E9D022", endColorstr="#E60B09", GradientType=1 );
+}
+
 .content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
 
 .calculator {
-    width: 300px;
-    height: 300px;
-    display: grid;
-    grid-template-rows: 15% 15% 70%;
-    border: solid 1px black;
-}
-
-.content-calculator {
-    display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-columns: 25% 25% 25% 25%;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 20% 10% 70%;
 }
 
 #display-calculator {
-    font-size: 24px;
-    text-align: right;
+  font-size: 30px;
+  text-align: right;
+  border: none;
+  padding: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-right: 10px;
 }
 
 #display-result {
-    font-size: 18px;
-    text-align: right;
+  font-size: 16px;
+  text-align: right;
+  border: none;
+  padding: 0;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-right: 10px;
+}
+
+.content-calculator {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#button-three {
+  grid-area: 1 / span 3;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  background-color: #DCDCDC
+}
+
+#button-three:hover {
+  background-color: #F8F8FF;
+}
+
+#button-two {
+  grid-area: 5 / span 2;
+  font-weight: bold;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  background-color: #D3D3D3
+}
+
+#button-two:hover {
+  background-color: #F8F8FF;
+}
+
+#button-number {
+  font-weight: bold;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  background-color: #D3D3D3
+}
+
+#button-number:hover {
+  background-color: #F8F8FF;
+}
+
+#button-point {
+  font-weight: bold;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  background-color: #D3D3D3
+}
+
+#button-point:hover{
+  background-color: #F8F8FF;
+}
+
+
+#button-operation {
+  background-color: #DCDCDC;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#button-operation:hover {
+    background-color: #F8F8FF;
 }
