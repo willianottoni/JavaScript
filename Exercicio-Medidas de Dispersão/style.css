@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+input {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.exercicio {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.notas {
+  display: flex;
+  flex-direction: column;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+}
+
+.desvio {
+  display: flex;
+  flex-direction: column;
+}
+
+.variancia {
+  display: flex;
+  flex-direction: column;
+}
+
+.desviopadrao {
+  display: flex;
+  flex-direction: column;
+}

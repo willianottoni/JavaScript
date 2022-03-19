@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios - Medidas de Dispersão</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="exercicio">
+        <h2>
+          Informe a nota de 5 alunos para cálculo da Média, Desvio, Variância e
+          Desvio Padrão
+        </h2>
+
+        <form class="notas">
+          <h2>Notas</h2>
+          <label for="a1">Aluno 1:</label>
+          <input type="text" name="a1" id="a1" />
+
+          <label for="a2">Aluno 2:</label>
+          <input type="text" name="a2" id="a2" />
+
+          <label for="a3">Aluno 3:</label>
+          <input type="text" name="a3" id="a3" />
+
+          <label for="a4">Aluno 4:</label>
+          <input type="text" name="a4" id="a4" />
+
+          <label for="a5">Aluno 5:</label>
+          <input type="text" name="a5" id="a5" />
+        </form>
+
+        <form class="media">
+          <h2>Média</h2>
+          <input type="text" name="media" id="media" />
+          <input type="button" value="Calcular" onclick="calcMedia()" />
+        </form>
+
+        <form class="desvio">
+          <h2>Desvio</h2>
+          <label for="desvio1">Desvio 1:</label>
+          <input type="text" name="desvio1" id="desvio1" />
+
+          <label for="desvio2">Desvio 2:</label>
+          <input type="text" name="desvio2" id="desvio2" />
+
+          <label for="desvio3">Desvio 3:</label>
+          <input type="text" name="desvio3" id="desvio3" />
+
+          <label for="desvio4">Desvio 4:</label>
+          <input type="text" name="desvio4" id="desvio4" />
+
+          <label for="desvio5">Desvio 5:</label>
+          <input type="text" name="desvio5" id="desvio5" />
+
+          <input type="button" value="Calcular" onclick="calcDesvio()" />
+        </form>
+
+        <form class="variancia">
+          <h2>Variância</h2>
+          <input type="text" name="variancia" id="variancia" size="10" />
+          <input type="button" value="Calcular" onclick="calcVariancia()" />
+        </form>
+
+        <form class="desviopadrao">
+          <h2>Desvio Padrão</h2>
+          <input type="text" name="media" id="desviopadrao" size="10" />
+          <input type="button" value="Calcular" onclick="calcDesvioPadrao()" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
