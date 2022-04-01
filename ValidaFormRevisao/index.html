@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label for="idNome">Nome</label>
+        <input type="text" id="idNome" />
+      </p>
+
+      <p>
+        <span id="erroNome"></span>
+      </p>
+
+      <p>
+        <label for="idData">Data</label>
+        <input type="date" id="idData" />
+      </p>
+
+      <p>
+        <span id="erroData"></span>
+      </p>
+
+      <p>
+        <label for="idCidade">Cidade</label>
+        <input type="text" id="idCidade" />
+      </p>
+
+      <p>
+        <span id="erroCidade"></span>
+      </p>
+
+      <p>
+        <input type="button" value="Validar formulário" id="botaoValida" />
+      </p>
+    </form>
+
+    <form>
+      <p>
+        <label for="meuTexto">Seu texto</label>
+        <br />
+        <textarea id="meuTexto" cols="50" rows="5"></textarea>
+      </p>
+
+      <p>
+        <label for="procurar">Procure por</label>
+        <input type="text" name="" id="procurar" />
+      </p>
+
+      <p>
+        <label for="substitua">Substituir por</label>
+        <input type="text" name="" id="substitua" />
+      </p>
+
+      <p>
+        <input type="button" value="Executar" id="botaoTroca" />
+      </p>
+
+      <p>
+        <label for="novoTexto">Novo texto</label>
+        <br />
+        <textarea name="" id="novoTexto" cols="50" rows="5"></textarea>
+      </p>
+    </form>
+
+    <script src="js/validaIndex.js"></script>
+  </body>
+</html>
